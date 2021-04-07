@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Ap-Up-4U8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MOVIES-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="FanBase_AssesmentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jTS-Pg-xHj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="moviesCell" rowHeight="385" id="SAp-mb-NOf" customClass="MovieCell" customModule="FanBase_AssesmentApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="385"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SAp-mb-NOf" id="1LM-w4-Pc9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="385"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Yw-LM-aOi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="385"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wpQ-9g-gfK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="184.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Suicide_Squad" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-UZ-4av">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="202" height="184.5"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="axU-8X-iMk">
+                                                                    <rect key="frame" x="212" y="0.0" width="202" height="184.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8V-cX-R2y">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="202" height="38.5"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvD-yE-9x2">
+                                                                            <rect key="frame" x="0.0" y="48.5" width="202" height="39"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr6-V7-bqO">
+                                                                            <rect key="frame" x="0.0" y="97.5" width="202" height="38.5"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-xx-3Qj">
+                                                                            <rect key="frame" x="0.0" y="146" width="202" height="38.5"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o20-fC-kvh">
+                                                            <rect key="frame" x="0.0" y="200.5" width="414" height="184.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ba5-z1-Rqf">
+                                                                <size key="itemSize" width="141" height="178.5"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="actorsCell" id="N5i-qd-Zc0" customClass="MovieCollectionViewCell" customModule="FanBase_AssesmentApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="3" width="141" height="178.5"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0I4-mB-eQb">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="178.5"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BdR-EF-pgZ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="145.5"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="140" id="8Mg-0I-mjO"/>
+                                                                                    <constraint firstAttribute="width" constant="140" id="QmO-xV-o3W"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUo-3j-Xw3">
+                                                                                <rect key="frame" x="0.0" y="153.5" width="141" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="20" id="XXL-t0-JWd"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="BdR-EF-pgZ" firstAttribute="leading" secondItem="0I4-mB-eQb" secondAttribute="leading" id="9CQ-Cd-4pB"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="gUo-3j-Xw3" secondAttribute="bottom" constant="5" id="9fP-nV-oeN"/>
+                                                                            <constraint firstItem="gUo-3j-Xw3" firstAttribute="top" secondItem="BdR-EF-pgZ" secondAttribute="bottom" constant="8" id="ErX-uQ-JEx"/>
+                                                                            <constraint firstItem="gUo-3j-Xw3" firstAttribute="leading" secondItem="0I4-mB-eQb" secondAttribute="leading" id="Fy7-pJ-55R"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="BdR-EF-pgZ" secondAttribute="trailing" id="b3I-hg-nQ9"/>
+                                                                            <constraint firstItem="gUo-3j-Xw3" firstAttribute="top" secondItem="BdR-EF-pgZ" secondAttribute="bottom" constant="8" id="cmL-Gb-HgC"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="gUo-3j-Xw3" secondAttribute="trailing" id="yUu-d4-Aip"/>
+                                                                            <constraint firstItem="BdR-EF-pgZ" firstAttribute="top" secondItem="0I4-mB-eQb" secondAttribute="top" id="zwx-t9-CKi"/>
+                                                                        </constraints>
+                                                                    </collectionViewCellContentView>
+                                                                    <size key="customSize" width="141" height="178.5"/>
+                                                                    <connections>
+                                                                        <outlet property="collectionImage" destination="BdR-EF-pgZ" id="m3p-QA-YfH"/>
+                                                                        <outlet property="collectionTiltleLbl" destination="gUo-3j-Xw3" id="Aqg-Op-mYJ"/>
+                                                                        <segue destination="bgo-5E-RzK" kind="show" identifier="ActorsBioVCId" id="kdd-6P-tXM"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                        </collectionView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="o20-fC-kvh" secondAttribute="trailing" id="RZm-XE-2rd"/>
+                                                        <constraint firstItem="o20-fC-kvh" firstAttribute="top" secondItem="wpQ-9g-gfK" secondAttribute="bottom" constant="16" id="a0j-bP-Gta"/>
+                                                        <constraint firstAttribute="bottom" secondItem="o20-fC-kvh" secondAttribute="bottom" id="gkJ-5q-8Tg"/>
+                                                        <constraint firstItem="o20-fC-kvh" firstAttribute="leading" secondItem="4Yw-LM-aOi" secondAttribute="leading" id="lwQ-HB-b03"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Yw-LM-aOi" firstAttribute="top" secondItem="1LM-w4-Pc9" secondAttribute="top" id="NEq-4H-MkZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Yw-LM-aOi" secondAttribute="trailing" id="lVw-CP-jpl"/>
+                                                <constraint firstItem="4Yw-LM-aOi" firstAttribute="leading" secondItem="1LM-w4-Pc9" secondAttribute="leading" id="pdy-77-pXf"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Yw-LM-aOi" secondAttribute="bottom" id="rD2-df-O3U"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="actorsCollectionView" destination="o20-fC-kvh" id="az8-Oz-QIG"/>
+                                            <outlet property="movieDirectorLbl" destination="qvD-yE-9x2" id="VMx-Cu-aAO"/>
+                                            <outlet property="movieDurationLbl" destination="Sr6-V7-bqO" id="wtn-ki-Pgq"/>
+                                            <outlet property="movieImageLbl" destination="5VI-UZ-4av" id="7Hk-IZ-Fd1"/>
+                                            <outlet property="movieRatingLbl" destination="IVE-xx-3Qj" id="voe-D3-gMl"/>
+                                            <outlet property="movieTitleLbl" destination="e8V-cX-R2y" id="FGU-yI-rGT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jTS-Pg-xHj" secondAttribute="bottom" id="Ze4-GJ-LsD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jTS-Pg-xHj" secondAttribute="trailing" id="eZ4-C3-TFf"/>
+                            <constraint firstItem="jTS-Pg-xHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fEX-23-6pE"/>
+                            <constraint firstItem="jTS-Pg-xHj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sFg-PM-joa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MOVIES" id="BLw-Tz-ajf"/>
+                    <connections>
+                        <outlet property="movieTableView" destination="jTS-Pg-xHj" id="th1-WT-Jzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--Actors BioVC-->
+        <scene sceneID="U8w-7t-Gjo">
+            <objects>
+                <viewController id="bgo-5E-RzK" customClass="ActorsBioVC" customModule="FanBase_AssesmentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EiS-Vu-4VN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5G8-0a-b85"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x5O-3a-Mj8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyq-Jz-YfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mgB-sP-jpJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ap-Up-4U8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OZn-cD-jr0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0051715179022560004" green="0.67314927600259078" blue="0.0080264232620538521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vVC-JJ-ed9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZL-3R-85C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Suicide_Squad" width="129.5" height="192"/>
+    </resources>
+</document>
